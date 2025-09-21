@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker - Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Expense Tracker</h1>
+            <p>A simple web application for learning Git workflows</p>
+        </header>
+        
+        <main>
+            <section class="expense-form">
+                <h2>Add New Expense</h2>
+                <form id="expenseForm">
+                    <input type="text" id="description" placeholder="Expense description" required>
+                    <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+                    <input type="date" id="date" required>
+                    <button type="submit">Add Expense</button>
+                </form>
+            </section>
+            
+            <section class="expense-list">
+                <h2>Recent Expenses</h2>
+                <ul id="expenseList">
+                    <!-- Expenses will be added here dynamically -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
